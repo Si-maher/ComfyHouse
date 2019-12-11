@@ -13,3 +13,8 @@
     padding: 0px;
     box-sizing: border-box;
 }
+body {
+    color: var(--mainBlack);
+    background: var(--mainWhite);
+    font-family: "Lato", sans-serif;
+}
