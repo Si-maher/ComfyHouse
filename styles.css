@@ -91,4 +91,8 @@ body {
     cursor: pointer;
 
 }
+.banner-btn:hover {
+    background: transparent;
+    
+}
 /* ----------------------end hero section------------------ */
