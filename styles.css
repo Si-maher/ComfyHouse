@@ -135,7 +135,12 @@ body {
     transition: var(--mainTransition);
     transform: translateX(101%);
     cursor: pointer;
-
-
 }
+.bag-btn:hover {
+    color: var(--mainWhite);
+}
+.fa-shopping-cart {
+    margin-right: 0.5rem;
+}
+
 /* --------------------------end of products--------------------------- */
