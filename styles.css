@@ -142,5 +142,16 @@ body {
 .fa-shopping-cart {
     margin-right: 0.5rem;
 }
-
+.img-container:hover .bag-btn {
+    transform: translateX(0);
+}
+.product-img {
+    display: block;
+    width: 100%;
+    min-height: 12rem;
+    transition: var(--mainTransition);
+}
+.img-container:hover .product-img {
+    opacity: 0.5;
+}
 /* --------------------------end of products--------------------------- */
