@@ -154,4 +154,11 @@ body {
 .img-container:hover .product-img {
     opacity: 0.5;
 }
+.product h3 {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    letter-spacing: var(--mainSpacing);
+    text-align: center;
+}
 /* --------------------------end of products--------------------------- */
