@@ -46,3 +46,14 @@ body {
     position: relative;
     cursor: pointer;
 }
+.cart-items {
+    position: absolute;
+    top: -8px;
+    right: -20px;
+    background: var(--primaryColor);
+    padding: 0 5px;
+    border-radius: 30%;
+    color: var(--mainWhite);
+}
+
+/* --------------------end of navbar---------------- */
