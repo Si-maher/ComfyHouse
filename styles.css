@@ -161,4 +161,10 @@ body {
     letter-spacing: var(--mainSpacing);
     text-align: center;
 }
+.product h4 {
+    margin-top: 0.7rem;
+    letter-spacing: var(--mainSpacing);
+    color: var(--primaryColor);
+    text-align: center;
+}
 /* --------------------------end of products--------------------------- */
