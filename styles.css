@@ -198,4 +198,10 @@ body {
     transition: var(--mainTransition);
     transform: translateX(100%);
 }
+.showCart {
+    transform: translateX(0);
+}
+.transparentBcg {
+    visibility: visible;
+}
 /* --------------------------end of cart--------------------------- */
