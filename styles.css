@@ -39,3 +39,10 @@ body {
     justify-content: space-between;
     padding: 0 15rem;
 }
+.nav-icon {
+    font-size: 1.5rem;
+}
+.cart-btn {
+    position: relative;
+    cursor: pointer;
+}
