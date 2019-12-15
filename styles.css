@@ -74,4 +74,10 @@ body {
     display: inline-block;
     padding: 2rem;
 }
+.banner-title {
+    font-size: 3.4rem;
+    text-transform: uppercase;
+    letter-spacing: var(--mainSpacing);
+    margin-bottom: 3rem;
+}
 /* ----------------------end hero section------------------ */
