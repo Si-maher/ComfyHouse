@@ -80,4 +80,15 @@ body {
     letter-spacing: var(--mainSpacing);
     margin-bottom: 3rem;
 }
+.banner-btn {
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    letter-spacing: var(--mainSpacing);
+    background: var(--primaryColor);
+    color: var(--mainBlack);
+    border: 1px solid var(--primaryColor);
+    transition: var(--mainTransition);
+    cursor: pointer;
+
+}
 /* ----------------------end hero section------------------ */
