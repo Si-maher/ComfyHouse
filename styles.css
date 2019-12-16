@@ -229,6 +229,10 @@ margin-bottom: 2rem;
     grid-column-gap: 1.5rem;
     margin: 1.5rem 0;
 }
+.cart-item img {
+    width: 75px;
+    height: 75px;
+}
 /* --------------------------end of cart item--------------------------- */
 
 .cart-footer {
