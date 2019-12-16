@@ -249,6 +249,11 @@ margin-bottom: 2rem;
     color: grey;
     cursor: pointer;
 }
+.fa-chevron-up,
+.fa-chevron-down {
+    color: var(--primaryColor);
+    cursor: pointer;
+}
 /* --------------------------end of cart item--------------------------- */
 
 .cart-footer {
