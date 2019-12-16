@@ -13,3 +13,23 @@ const productsDOM = document.querySelector(".products-center ");
 // cart 
 
 let cart = []
+
+// Getting the products 
+
+class Products {
+
+}
+
+// displaying the products 
+
+class UI {
+
+}
+
+// local storage 
+
+class Storage {
+
+}
+
+
