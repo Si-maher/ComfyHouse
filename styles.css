@@ -245,6 +245,10 @@ margin-bottom: 2rem;
 .item-amount {
     text-align: center;
 }
+.remove-item {
+    color: grey;
+    cursor: pointer;
+}
 /* --------------------------end of cart item--------------------------- */
 
 .cart-footer {
