@@ -242,6 +242,9 @@ margin-bottom: 2rem;
     margin: 0.5rem 0;
     letter-spacing: var(--mainSpacing);
 }
+.item-amount {
+    text-align: center;
+}
 /* --------------------------end of cart item--------------------------- */
 
 .cart-footer {
