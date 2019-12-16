@@ -206,8 +206,17 @@ body {
 @media screen and (min-width:768px) {
     .cart {
         width: 30vh;
-        min-width: 450%;
+        min-width: 450px;
     }
 }
-
+.close-cart {
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+.cart h2 {
+text-transform: uppercase;
+text-align: center;
+letter-spacing: var(--mainSpacing);
+margin-bottom: 2rem;
+}
 /* --------------------------end of cart--------------------------- */
