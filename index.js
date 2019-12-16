@@ -44,17 +44,18 @@ class UI {
             result += `
             <article class="product">
             <div class="img-container">
-            <img src="./images/product-1.jpeg" alt="product" class="product-img">
-            <button class="bag-btn" data-id="1">
+            <img src=${product.image} alt="product" class="product-img">
+            <button class="bag-btn" data-id=${product.id}>
             <i class="fas fa-shopping-cart"></i>add to cart
             </button>
             </div>
-            <h3>queen bed</h3>
-            <h4>€16</h4>
+            <h3>${product.title}</h3>
+            <h4>€${product.price}16</h4>
             </article>
             `
         
         })
+        productsDOM.innerHTML = result
     }
 }
 
