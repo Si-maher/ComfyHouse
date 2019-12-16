@@ -238,6 +238,10 @@ margin-bottom: 2rem;
     text-transform: uppercase;
     letter-spacing: var(--mainSpacing);
 }
+.cat-item h5 {
+    margin: 0.5rem 0;
+    letter-spacing: var(--mainSpacing);
+}
 /* --------------------------end of cart item--------------------------- */
 
 .cart-footer {
