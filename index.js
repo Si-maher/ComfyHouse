@@ -13,6 +13,7 @@ const productsDOM = document.querySelector(".products-center ");
 // cart
 
 let cart = [];
+let buttonsDOM = []
 
 // Getting the products
 
@@ -57,11 +58,10 @@ class UI {
         productsDOM.innerHTML = result
     }
     
-    // local storage
     
     getBagButtons() {
       const buttons = [...document.querySelectorAll(".bag-btn")]
-      console.log(buttons);
+      buttonsDOM = buttons
       
       buttons.forEach(button => {
         let id = button.dataset.id 
@@ -73,18 +73,31 @@ class UI {
           button.addEventListener("click", event => {
             event.target.innerText ="In Cart"
             event.target.disabled = true
+            // get single product from product
+            // add single product to the cart 
+            // save the cart to the local storage 
+            // set the cart values 
+            // display the cart item(S)
+            // show the cart  
             
           })
         }
         
       })
     }
-}
+  }
+  // local storage
+
 class Storage {
     static saveProducts(products) {
-     localStorage.setItem("products", JSON.stringify(products)
-     )
-   }
+     localStorage.setItem("products", JSON.stringify(products))
+    }
+    static getProduct(id){
+
+      let products = JSON.parse(localStorage.getItem('products'))
+      return products.find(product => product.id === id)
+    }
+     
 }
 
 document.addEventListener("DOMContentLoaded", () => {
