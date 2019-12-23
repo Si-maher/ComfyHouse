@@ -73,9 +73,21 @@ class UI {
           button.addEventListener("click", event => {
             event.target.innerText ="In Cart"
             event.target.disabled = true
+
             // get single product from product
-            // add single product to the cart 
+
+            let cartItem = {...Storage.getProduct(id), amount:1}
+
+            // add single product to the cart
+
+            cart = [...cart,cartItem]
+
             // save the cart to the local storage 
+
+            
+            
+            
+            
             // set the cart values 
             // display the cart item(S)
             // show the cart  
