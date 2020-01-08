@@ -136,7 +136,7 @@ class UI {
             setupAPP() {
               cart = Storage.getCart()
               this.setCartValues(cart)
-              this.populate(cart)
+              this.populateCart(cart)
               cartBtn.addEventListener('clcick', this.showCart)
               closeCartBtn.addEventListener('click', this.hideCart)
 
@@ -144,7 +144,10 @@ class UI {
             populateCart(cart) {
               cart.forEach(item => this.addCartItem(item))
             }
-            
+            hideCart() {
+              cartDOM.classList.remove('showCart')
+              cartOverLay.classList.remove('transparentBcg')
+            }
 
         }
           
