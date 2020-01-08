@@ -114,23 +114,25 @@ class UI {
             const div = document.createElement('div')
             div.classList.add('cart-item')
             div.innerHTML = `
-            <img src="./images/product-1.jpeg" alt="product" />
+            <img src=${item.image} alt="product" />
             <div>
-              <h4>queen bed</h4>
-              <h5>€999</h5>
-              <span class="remove-item">remove</span>
+              <h4>${item.title}</h4>
+              <h5>€${item.price}</h5>
+              <span class="remove-item" data-id=${item.id}>remove</span>
             </div>
             <div>
-              <i class="fas fa-chevron-up"></i>
-              <p class="item-amount"></p>
-              <i class="fas fa-chevron-down"></i>
-            </div>
+              <i class="fas fa-chevron-up" data-id = ${item.id}></i>
+              <p class="item-amount">${item.amount}</p>
+              <i class="fas fa-chevron-down" data-id=${item.id}></i>
+            </div> `
+            cartContent.appendChild(div)
+            console.log(cartContent);
             
-            `
           }
+
+        }
           
 
-    }
   // local storage
 
 class Storage {
