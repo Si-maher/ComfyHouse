@@ -92,7 +92,9 @@ class UI {
 
             // display the cart item(S)
             this.addCartItem(cartItem)
+
             // show the cart  
+            this.showCart()
 
           })
         })
@@ -126,9 +128,12 @@ class UI {
               <i class="fas fa-chevron-down" data-id=${item.id}></i>
             </div> `
             cartContent.appendChild(div)
-            console.log(cartContent);
-            
           }
+            showCart() {
+              cartDOM.classList.add('showCart')
+              cartOverLay.classList.add('transparentBCG')
+            }
+            
 
         }
           
