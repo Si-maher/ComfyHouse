@@ -131,7 +131,10 @@ class UI {
           }
             showCart() {
               cartDOM.classList.add('showCart')
-              cartOverLay.classList.add('transparentBCG')
+              cartOverLay.classList.add('transparentBcg')
+            }
+            setupAPP() {
+
             }
             
 
@@ -152,12 +155,16 @@ class Storage {
     static saveCart(cart){
       localStorage.setItem('cart',JSON.stringify(cart) )
     }
+    static getCart () {
+      return localStorage.getItem('cart')?JSON.parse(localStorage.getItem('cart')) : []
+    }
      
 }
 
 document.addEventListener("DOMContentLoaded", () => {
   const ui = new UI();
   const products = new Products();
+  ui.setupAPP()
 
   // get all products
 
