@@ -137,6 +137,8 @@ class UI {
               cart = Storage.getCart()
               this.setCartValues(cart)
               this.populate(cart)
+              cartBtn.addEventListener('clcick', this.showCart)
+              closeCartBtn.addEventListener('click', this.hideCart)
 
             }
             populateCart(cart) {
