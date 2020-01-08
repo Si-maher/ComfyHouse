@@ -134,7 +134,13 @@ class UI {
               cartOverLay.classList.add('transparentBcg')
             }
             setupAPP() {
+              cart = Storage.getCart()
+              this.setCartValues(cart)
+              this.populate(cart)
 
+            }
+            populateCart(cart) {
+              cart.forEach(item => this.addCartItem(item))
             }
             
 
