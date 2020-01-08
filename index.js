@@ -69,7 +69,7 @@ class UI {
         if(inCart){
           button.innerText ="In Cart"
           button.disabled = true
-        }else {
+        }
           button.addEventListener("click", event => {
             event.target.innerText ="In Cart"
             event.target.disabled = true
@@ -86,18 +86,33 @@ class UI {
 
             Storage.saveCart(cart)
             
-            
-            
             // set the cart values 
+
+            this.setCartValues(cart)
+
             // display the cart item(S)
             // show the cart  
-            
+
           })
-        }
-        
-      })
+        })
     }
-  }
+            
+            
+            
+        setCartValues(cart) {
+          let startValue = 0
+          let itemsTotal = 0
+          cart.map(item => {
+            startValue += item.price * item.amount
+            itemsTotal += item.amount
+          })
+          cartTotal.innerText = parseFloat(startValue.toFixed(2))
+          cartItems.innerText = itemsTotal
+          console.log(cartTotal, cartItems);
+          
+
+        }
+    }
   // local storage
 
 class Storage {
