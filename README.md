@@ -6,7 +6,7 @@ The total amount dynamically changes accordingly to which ever option is chosen 
 Local storage is used so that the user information is saved when ever the page is refreshed. This is acheived with the standard Static, setItem, getItem, JSON.parse, JSON.stringyfy etc.
 Different methods were used to render certain aspects of the local data within the objects and arrays including; map, forEach...
 
-#[DEMO](https://comfyhouseshop.netlify.com/)
+# [DEMO](https://comfyhouseshop.netlify.com/)
 
 # Preview
 
